@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dados</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DADOS LOCOS</h1>
+    </header>
+
+    <main class="tablero">
+      <section class="juego">
+        <div class="dados">
+          <img
+            class="dado1"
+            id="dadosImagen1"
+            src="./images/1.svg"
+            alt="dado1"
+          />
+          <img
+            class="dado2"
+            id="dadosImagen2"
+            src="./images/1.svg"
+            alt="dado2"
+          />
+        </div>
+
+        <div class="boton">
+          <button onclick="lanzar()">LANZAR</button>
+        </div>
+      </section>
+
+      <section class="lateral">
+        <div class="instrucciones">
+          <h2>INSTRUCCIONES</h2>
+          <ul>
+            <li>Haz clic en el botón "Lanzar" para lanzar los dados.</li>
+            <li>Espera un momento mientras los dados cambian al azar.</li>
+            <li>Si ambos dados son iguales, ¡has ganado el juego!</li>
+            <li>Si no, inténtalo de nuevo haciendo clic en "Lanzar".</li>
+          </ul>
+          <p class="frase">SUERTE!</p>
+        </div>
+
+        <div class="resultados">
+          <p><span id="resultado"></span></p>
+           <p>Ganaste:<span id="resultadoGanaste"></span> </p>
+            <p>Perdiste:<span id="resultadoPerdiste"></span></p>
+        </div>
+
+      </section>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+  .tablero {
+    padding: 4vh;
+  }
+
+  button {
+    font-size: 2vw;
+    width: 90%;
+  }
+
+  .dados img {
+    padding: 1.5vw;
+  }
+
+  h1 {
+    font-size: 4vh;
+  }
+  
+  button{
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tablero {
+    flex-direction: column; /* Los dados y el botón estarán en una columna */
+    padding: 3vh;
+  }
+
+  .dados img {
+    padding: 3vw;
+  }
+
+  button{
+    margin: 1rem;
+  }
+}
